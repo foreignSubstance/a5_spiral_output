@@ -10,8 +10,14 @@ void main() {
   ];
 
   print('Spiral ouput V1');
+  final v1 = Stopwatch()..start();
   spiralOutputV1(matr);
-  print('-'*20);
-  print('Spiral ouput V1');
+  v1.stop;
+  print('-' * 20);
+  print('Spiral ouput V2');
+  final v2 = Stopwatch()..start();
   spiralOutputV2(matr);
+  v2.stop;
+  print('\nВремя выполнения V1 (мс) ${v1.elapsed.inMicroseconds}');
+  print('Время выполнения V2 (мс) ${v2.elapsed.inMicroseconds}');
 }
