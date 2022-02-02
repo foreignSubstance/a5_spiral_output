@@ -18,6 +18,6 @@ void main() {
   final v2 = Stopwatch()..start();
   spiralOutputV2(matr);
   v2.stop;
-  print('\nВремя выполнения V1 (мс) ${v1.elapsed.inMicroseconds}');
-  print('Время выполнения V2 (мс) ${v2.elapsed.inMicroseconds}');
+  print('\nВремя выполнения V1 (мкс) ${v1.elapsed.inMicroseconds}');
+  print('Время выполнения V2 (мкс) ${v2.elapsed.inMicroseconds}');
 }
